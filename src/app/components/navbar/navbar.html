@@ -1,21 +1,44 @@
-<nav class="navbar navbar-static-top navbar-inverse">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="https://github.com/Swiip/generator-gulp-angular">
-        <span class="glyphicon glyphicon-home"></span> Gulp Angular
-      </a>
+<nav class="navbar navbar-static-top navbar-default" style="padding-bottom: 20px; border-bottom: 0; margin-bottom: 0">
+  <div class="container-fluid" style="display: flex; flex-direction: column; justify-content: center;">
+    <!--<div class="navbar-header" style="display: flex; flex-direction: column; align-items: center; justify-content: center; width: 200px; height: 200px; margin:auto; border-radius: 50%; background-color: grey">-->
+      <!--<div class="navbar-brand" style="font-size: 32px;">-->
+         <!--Wesley <span style="color: brown">W</span>ang-->
+      <!--</div>-->
+      <!--<div style=" background-color: white; width: 400px; text-align: center; margin-top: 20px; font-size: 18px; padding: 10px">-->
+        <!--The portfolio of a front end developer-->
+      <!--</div>-->
+    <!--</div>-->
+
+    <!--<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-6">-->
+      <!--<div style="display: flex; justify-content: space-around; width: 70%; margin:auto;">-->
+        <!--<div class="active"><a ng-href="#" style="color: grey">About</a></div>-->
+        <!--<div><a ng-href="#" style="color: grey">Projects</a></div>-->
+        <!--<div><a ng-href="#" style="color: grey">Blog</a></div>-->
+        <!--<div><a ng-href="#" style="color: grey">Contact</a></div>-->
+      <!--</div>-->
+    <!--</div>-->
+
+    <div class="navbar-header" style="display: flex; flex-direction: column; align-items: center; justify-content: center; width: 220px; height: 220px; margin:auto; border-radius: 50%; background-color: #eee">
+      <button type="button" class="navbar-toggle" style=" position: absolute; top: 0; right: 0" ng-click="vm.isNavCollapsed = !vm.isNavCollapsed">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <div class="navbar-brand" style="font-size: 30px;">
+        Wesley <span style="color: brown">W</span>ang
+      </div>
+      <div ng-style="{width: vm.width > 500 ? '400px': '300px'}" style="font-family: Comic Sans MS; background-color: #f8f8f8; text-align: center; margin-top: 20px; font-size: 15px; padding: 10px">
+        The portfolio of a front end developer
+      </div>
     </div>
-
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-6">
-      <ul class="nav navbar-nav">
-        <li class="active"><a ng-href="#">Home</a></li>
-        <li><a ng-href="#">About</a></li>
-        <li><a ng-href="#">Contact</a></li>
-      </ul>
-
-      <ul class="nav navbar-nav navbar-right acme-navbar-text">
-        <li>Application was created {{ vm.relativeDate }}.</li>
-      </ul>
+    <div class="collapse navbar-collapse" uib-collapse="vm.isNavCollapsed">
+      <div style="display: flex; justify-content: space-around; width: 70%; margin:auto; font-family: Comic Sans MS; background-color: #ffffff; box-shadow: 0 5px 5px #888888; margin-top: 15px; padding: 10px">
+        <div class="active"><a ng-href="#" style="color: grey">About</a></div>
+        <div><a ng-href="#" style="color: grey">Projects</a></div>
+        <div><a ng-href="#" style="color: grey">Blog</a></div>
+        <div><a ng-href="#" style="color: grey">Contact</a></div>
+      </div>
     </div>
   </div>
 </nav>

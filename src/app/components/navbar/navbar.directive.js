@@ -21,5 +21,7 @@ class NavbarController {
 
     // "this.creationDate" is available by directive option "bindToController: true"
     this.relativeDate = moment(this.creationDate).fromNow();
+    this.isNavCollapsed = true;
+    this.width = window.innerWidth;
   }
 }
