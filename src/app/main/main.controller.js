@@ -6,9 +6,12 @@ export class MainController {
     this.classAnimation = '';
     this.creationDate = 1492215601713;
     this.toastr = toastr;
+    this.windowHeight = window.innerHeight;
 
     this.activate($timeout, webDevTec);
   }
+
+
 
   activate($timeout, webDevTec) {
     this.getWebDevTec(webDevTec);
