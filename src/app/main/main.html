@@ -4,6 +4,29 @@
     <acme-navbar creation-date="main.creationDate"></acme-navbar>
   </div>
 
+  <div class="row" style="margin: 10px 30px;">
+    <div class="col-md-5" style="padding: 20px">
+      aaa
+    </div>
+    <div class="col-md-7" style="padding: 20px">
+      <timeline>
+
+        <timeline-event ng-repeat="event in main.events" side="alternate">
+          <timeline-badge class="{{event.badgeClass}}">
+            {{event.time}}
+          </timeline-badge>
+          <timeline-panel class="{{event.badgeClass}}">
+            <timeline-heading>
+              <h4>{{event.title}}</h4>
+            </timeline-heading>
+            <p>{{event.content}}</p>
+          </timeline-panel>
+        </timeline-event>
+      </timeline>
+    </div>
+  </div>
+
+
   <div style="display: flex; margin: 10px 30px;">
     <div style="flex:1; padding: 20px">Analyse the requirement of projects; set up project and establish database. Using angularJS to fulfill front end job in most time and also using nodeJS sometimes. Using restapi and also have written some restapi.</div>
     <div style="flex:1; padding: 20px">Develop mobile App using React Native; Using Redux to manipulate data storing and updating.  </div>
@@ -25,7 +48,7 @@
   </div>
 
   <div id="contact">
-    <h3 class="text-center">Contact</h3>
+    <h3 class="text-center">GET IN TOUCH</h3>
     <acme-contact creation-date="main.creationDate"></acme-contact>
   </div>
 

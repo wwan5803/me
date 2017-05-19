@@ -13,7 +13,8 @@ import { ContactDirective } from '../app/components/contact/contact.directive';
 
 import { MalarkeyDirective } from '../app/components/malarkey/malarkey.directive';
 
-angular.module('me', ['ngAnimate', 'ngCookies', 'ngTouch', 'ngSanitize', 'ngMessages', 'ngAria', 'ngResource', 'ui.router', 'ui.bootstrap', 'toastr'])
+angular.module('me', ['ngAnimate', 'ngCookies', 'ngTouch', 'ngSanitize', 'ngMessages', 'ngAria',
+  'ngResource', 'ui.router', 'ui.bootstrap', 'toastr', 'angular-timeline'])
   .constant('malarkey', malarkey)
   .constant('moment', moment)
   .config(config)
