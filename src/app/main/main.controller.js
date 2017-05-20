@@ -13,23 +13,44 @@ export class MainController {
       time: '1991',
       title: 'Birth',
       content: 'Start my trip'
-    }, {
-      badgeClass: 'info',
-      badgeIconClass: 'glyphicon-check',
-      time: '2011',
-      title: 'Study in SCU',
-      content: 'Bachelor of information technology'
-    }, {
+    },
+      {
       time: '2013',
-      title: 'Graduate',
+      title: 'Graduate from SCU',
       content: 'Bachelor of information technology'
     },{
       badgeClass: 'warning',
       badgeIconClass: 'glyphicon-credit-card',
       time: '2014',
-      title: 'Study in USYD',
+      title: 'Graduate from USYD',
       content: 'Master of software engineering'
     }];
+
+    this.workEvents = [{
+      badgeClass: 'info',
+      time: '12.10-13.1',
+      title: 'China grid',
+      content: 'IT help desk intern'
+    },{
+      badgeClass: 'warning',
+      badgeIconClass: 'glyphicon-check',
+      time: '14.12-15.2',
+      title: 'Posmil Software',
+      content: 'Sales consultant'
+    },
+      {
+        badgeClass: 'info',
+        time: '15.1-15.6',
+        title: 'Sincere Real Estate',
+        content: 'Sales consultant'
+      },{
+        badgeClass: 'warning',
+        badgeIconClass: 'glyphicon-credit-card',
+        time: '15.6-now',
+        title: 'Sk8Tech',
+        content: 'Full-Stack developer'
+      }];
+
 
     this.activate($timeout, webDevTec);
 
