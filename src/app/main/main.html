@@ -6,11 +6,11 @@
 
   <div class="row" style="margin: 10px 30px;">
     <div class="col-md-6 text-center" style="padding: 20px;">
-      <h3>Education</h3>
+      <h3  ng-click="myCssVar='main-text'">Education</h3>
       <timeline>
 
         <timeline-event ng-repeat="event in main.events" side="alternate">
-          <timeline-badge class="{{event.badgeClass}}" >
+          <timeline-badge class="{{event.badgeClass}}">
             {{event.time}}
           </timeline-badge>
           <timeline-panel class="{{event.badgeClass}}">
@@ -23,7 +23,7 @@
       </timeline>
     </div>
     <div class="col-md-6 text-center" style="padding: 20px">
-      <h3>Work Experience</h3>
+      <h3 class="myCssVar">Work Experience</h3>
       <timeline>
 
         <timeline-event ng-repeat="event in main.workEvents" side="alternate">
