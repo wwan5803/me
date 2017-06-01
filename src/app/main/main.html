@@ -6,14 +6,14 @@
 
   <div class="row" style="margin: 10px 30px;">
     <div class="col-md-6 text-center" style="padding: 20px;">
-      <h3  ng-click="myCssVar='main-text'">Education</h3>
+      <h3>Education</h3>
       <timeline>
 
         <timeline-event ng-repeat="event in main.events" side="alternate">
           <timeline-badge class="{{event.badgeClass}}">
             {{event.time}}
           </timeline-badge>
-          <timeline-panel class="{{event.badgeClass}}">
+          <timeline-panel class="{{event.badgeClass}}" ng-mouseover="myCssVar='css-class'" ng-mouseleave="myCssVar=''" ng-class="myCssVar">
             <timeline-heading>
               <h4>{{event.title}}</h4>
             </timeline-heading>
@@ -23,14 +23,14 @@
       </timeline>
     </div>
     <div class="col-md-6 text-center" style="padding: 20px">
-      <h3 class="myCssVar">Work Experience</h3>
+      <h3>Work Experience</h3>
       <timeline>
 
         <timeline-event ng-repeat="event in main.workEvents" side="alternate">
           <timeline-badge class="{{event.badgeClass}}" style="width: 60px; border-radius: 0; margin-left: -30px; font-size: 12px">
             {{event.time}}
           </timeline-badge>
-          <timeline-panel class="{{event.badgeClass}}">
+          <timeline-panel class="{{event.badgeClass}}" ng-mouseover="myCssVar='css-class'" ng-mouseleave="myCssVar=''" ng-class="myCssVar">
             <timeline-heading>
               <h4>{{event.title}}</h4>
             </timeline-heading>
