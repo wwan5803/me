@@ -39,8 +39,9 @@ a:hover, a:focus {
   color: red;
 }
 
-#mybox {
+.mybox {
   color: darkgreen;
+  border-radius: 20px;
   margin: 0 auto 10px auto;
   padding: 5px;
   width:150px;
@@ -48,7 +49,7 @@ a:hover, a:focus {
   position:relative;
 }
 
-#mybox:after {
+.mybox:after {
   content:"";
   border-color: #ff0 transparent transparent transparent;
   border-style:solid;
@@ -58,4 +59,16 @@ a:hover, a:focus {
   position:absolute;
   bottom:-20px;
   left:80px
+}
+
+#pane {
+  position:relative;
+  width:300px; height:300px;
+  border:2px solid red;
+}
+
+#box {
+  position:absolute; top:140px; left:140px;
+  width:20px; height:20px;
+  background-color:black;
 }

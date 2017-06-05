@@ -2,13 +2,18 @@
 
   <h2 class="text-center">Welcome</h2>
 
+
+
   <div class="row text-center" style="margin-top: 100px">
+    <input type="text" size="50" ng-keydown="vm.uniKeyCode($event)" autofocus="true">
     <div class="col-md-6 col-xs-6">
-      <div id="mybox" ng-show="!vm.onDrag">please drag me to the end point
+      <div class="mybox" ng-show="!vm.onDrag">please drag me to the end point
       </div>
       <div style="position: absolute; z-index: 100; left: 0; right: 0; margin:auto" ng-repeat="obj in vm.droppedObjects1" ng-drag="true" ng-drag-data="obj"
            ng-drag-success="onDragComplete($data,$event)">
-        <img  ng-src="assets/images/car.png" alt="car" width="50">
+        <div class="mybox" ng-show="vm.onDrag">Thank you
+        </div>
+        <img ng-src="assets/images/car.png" alt="car" width="50">
       </div>
     </div>
     <div class="col-md-6 col-xs-6 ">
@@ -18,6 +23,13 @@
         </div>
     </div>
   </div>
+
+  <div id="pane">
+    <div id="box"></div>
+  </div>
+  <p>
+    Click inside the red border, then use ARROW keys to move the black box.
+  </p>
 
 
 
