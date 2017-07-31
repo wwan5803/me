@@ -19,3 +19,88 @@ a:hover, a:focus {
 .main-text{
   color: slategrey;
 }
+
+.move-in{
+  position: relative;
+  -webkit-animation: mymove 3s; /* Safari 4.0 - 8.0 */
+  animation: mymove 3s;
+}
+
+@-webkit-keyframes mymove {
+  from {top: -50px;}
+  to {top: 0;}
+}
+
+@keyframes mymove {
+  from {top: -50px;}
+  to {top: 0;}
+}
+
+//.rotate-w {
+//  -webkit-animation: rotation 2s infinite linear;
+//  -webkit-animation-delay: 3s;
+//  animation: rotation 2s infinite linear;
+//  animation-delay: 3s;
+//}
+//
+//@-webkit-keyframes rotation {
+//  from {
+//    -webkit-transform: rotate(0deg);
+//  }
+//  to {
+//    -webkit-transform: rotate(359deg);
+//  }
+//}
+//
+//@keyframes rotation {
+//  from {
+//    transform: rotate(0deg);
+//  }
+//  to {
+//    transform: rotate(359deg);
+//  }
+//}
+
+
+
+@media screen and (max-width: 768px) {
+  .cloud-move{
+    -webkit-animation: cloudmove 5s infinite; /* Safari 4.0 - 8.0 */
+    animation: cloudmove 5s infinite;
+  }
+  @-webkit-keyframes cloudmove {
+    from {left: 0;}
+    to {left: 45%;}
+  }
+
+  @keyframes cloudmove {
+    from {left: 0;}
+    to {left: 45%;}
+  }
+
+}
+
+@media screen and (min-width: 768px) {
+  .cloud-move{
+    -webkit-animation: cloudmove 10s infinite; /* Safari 4.0 - 8.0 */
+    animation: cloudmove 10s infinite;
+  }
+  @-webkit-keyframes cloudmove {
+    from {left: 0;}
+    to {left: 90%;}
+  }
+
+  @keyframes cloudmove {
+    from {left: 0;}
+    to {left: 90%;}
+  }
+
+}
+
+.nav-background{
+  background: #f8f8f8; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(#f8f8f8, white); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#f8f8f8, white); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#f8f8f8, white); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#f8f8f8, white); /* Standard syntax */
+}

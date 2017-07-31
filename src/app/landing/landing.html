@@ -1,35 +1,16 @@
 <div class="container" style="font-family: Comic Sans MS;">
 
-  <!--<h2 class="text-center">Welcome</h2>-->
+  <h2 class="text-center">Welcome</h2>
 
 
 
-  <div class="row text-center" style="margin-top: 100px">
-    <input type="text" size="50" ng-keydown="vm.uniKeyCode($event)" autofocus="true">
-    <div class="col-md-6 col-xs-6">
-      <div class="mybox" ng-show="!vm.onDrag">please drag me to the end point
-      </div>
-      <div style="position: absolute; z-index: 100; left: 0; right: 0; margin:auto" ng-repeat="obj in vm.droppedObjects1" ng-drag="true" ng-drag-data="obj"
-           ng-drag-success="onDragComplete($data,$event)">
-        <div class="mybox" ng-show="vm.onDrag">Thank you
-        </div>
-        <img ng-src="assets/images/car.png" alt="car" width="50">
-      </div>
-    </div>
-    <div class="col-md-6 col-xs-6 ">
+  <div style="text-align: center; padding: 150px 0">
+    <object>
+      <embed ng-src="assets/images/logo.svg" width="50%" height="50%">
 
-        <div class="title" ng-drop="true" ng-drop-success="vm.onDropComplete($data,$event)" style="margin: auto; border-radius: 50%; background-color: lightgrey; width: 120px; height: 70px; box-shadow: 2px 5px 2px 1px #888888;">
-          <img ng-src="assets/images/moving_arrow.gif" alt="arrow" width="50">
-        </div>
-    </div>
+    </object>
   </div>
 
-  <div id="pane" style="width:300px;">
-    <div id="box" style="top:140px; left:140px; width:20px;"></div>
-  </div>
-  <p>
-    Click inside the red border, then use ARROW keys to move the black box.
-  </p>
 
 
 
