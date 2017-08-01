@@ -19,3 +19,37 @@ a:hover, a:focus {
 .main-text{
   color: slategrey;
 }
+
+.section{
+  position: relative;
+
+}
+
+.overlay {
+  position: absolute;
+  bottom: 100%;
+  left: 25%;
+  right: 0;
+  background-color: black;
+  overflow: hidden;
+  width: 60%;
+  height:0;
+  transition: .5s ease;
+}
+
+.section:hover .overlay {
+  bottom: 0;
+  height: 100%;
+}
+
+.text {
+  white-space: nowrap;
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}

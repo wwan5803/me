@@ -26,7 +26,6 @@ class NavbarController {
     this.location = $location;
     this.mainService = mainService;
     $scope.itemArray = [
-      {image: 'assets/images/cloud1.png', isRain: true, isSunny: false, isSnow: false},
       {image: 'assets/images/cloud2.png', isRain: true, isSunny: false, isSnow: false},
       {image: 'assets/images/cloud3.png', isRain: false, isSunny: false, isSnow: true},
       {image: 'assets/images/sun.png', isRain: false, isSunny: true, isSnow: false}
